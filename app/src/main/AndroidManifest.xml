@@ -18,6 +18,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Myhome"/>
+        <activity android:name=".Play"/>
+        <activity android:name=".ZongyiShouye"/>
+        <activity android:name=".ZongyiShaixuan"/>
     </application>
 
 </manifest>
