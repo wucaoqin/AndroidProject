@@ -16,7 +16,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+      </activity>
+        <activity android:name=".Myhome"/>
+        <activity android:name=".Play"/>
+        <activity android:name=".ZongyiShouye"/>
+        <activity android:name=".ZongyiShaixuan"/>
         <activity android:name=".Myhome" />
         <activity android:name=".MySet"/>
         <activity android:name=".NumberOfCaches"/>

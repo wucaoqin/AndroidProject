@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import tool.SendGet;
@@ -11,6 +12,8 @@ import tool.SendGet;
 import static tool.StringDeal.StringDeal;
 
 public class MainActivity extends AppCompatActivity{
+    Button variety;
+    ImageButton myhom;
     ImageButton myhome,download,homepage,vip;
     TextView txt;
     @Override
@@ -20,6 +23,14 @@ public class MainActivity extends AppCompatActivity{
             getSupportActionBar().hide();
         }
         setContentView(R.layout.activity_main);
+        variety=(Button)findViewById(R.id.variety);
+        variety.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,ZongyiShouye.class);
+                startActivity(intent);
+            }
+        });
         homepage=(ImageButton)findViewById(R.id.homepage2);
         vip=(ImageButton)findViewById(R.id.vip);
         download=(ImageButton)findViewById(R.id.download);
