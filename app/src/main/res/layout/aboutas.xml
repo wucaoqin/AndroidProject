@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/black">
+        <ImageButton
+            android:id="@+id/img_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/returnpage"
+            android:background="@android:color/transparent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:text="关于我们" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="CliCli，中国高品质视频娱乐服务提供者。2010年4月22日正式上线，秉承“悦享品质”的品牌口号，积极推动产品、技术、内容、营销等全方位创新，为用户提供丰富、高清、流畅的专业视频体验，致力于让人们平等、便捷地获得更多、更好的视频。目前，CliCli已成功构建了包含电商、游戏、电影票等业务在内、连接人与服务的视频商业生态，引领视频网站商业模式的多元化发展。
+
+CliCli品质、青春、时尚的品牌调性深入人心，网罗了全球广大的年轻用户群体。CliCli打造涵盖电影、电视剧、综艺、动漫在内的十余种类型的丰富的正版视频内容库，并通过“CliCli出品”战略的持续推动，让“纯网内容”进入真正意义上的全类别、高品质时代。同时，作为拥有海量付费用户的视频网站，爱奇艺倡导“轻奢新主义”的VIP会员理念，主张人们对高品质生活细节的追求，坚持为广大VIP会员提供专属的海量精品内容，极致的视听体验，以及独有的线下会员服务。
+"
+        android:textSize="18dp"
+        android:layout_height="match_parent" />
+</LinearLayout>
