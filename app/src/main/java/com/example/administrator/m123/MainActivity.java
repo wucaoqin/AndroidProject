@@ -12,8 +12,8 @@ import tool.SendGet;
 import static tool.StringDeal.StringDeal;
 
 public class MainActivity extends AppCompatActivity{
+    private Button cartoon;
     Button variety;
-    ImageButton myhom;
     ImageButton myhome,download,homepage,vip;
     TextView txt;
     Button Movie,Tiyu;
@@ -24,6 +24,14 @@ public class MainActivity extends AppCompatActivity{
             getSupportActionBar().hide();
         }
         setContentView(R.layout.activity_main);
+        cartoon=(Button)findViewById(R.id.cartoon);
+        cartoon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,CartoonActive.class);
+                startActivity(intent);
+            }
+        });
         variety=(Button)findViewById(R.id.variety);
         variety.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,7 +103,6 @@ public class MainActivity extends AppCompatActivity{
                         txt.append(ss[i]);
                     }
                 } catch (Exception e) {
-                    //txt.append("出错！");
                     e.printStackTrace();
                 }
             }
