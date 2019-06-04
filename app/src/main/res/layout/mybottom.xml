@@ -5,11 +5,13 @@
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp">
+        android:layout_height="40dp"
+        android:background="@layout/boder">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="  VIP会员服务"
+            android:textColor="@android:color/background_dark"
             android:gravity="center|left"/>
 
     </LinearLayout>
@@ -17,24 +19,41 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal">
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="match_parent"
-            android:text="开通VIP会员"
-            android:background="@android:color/transparent"/>
-        <Button
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:elevation="8dip">
+            <Button
+                android:id="@+id/btn_vipVideo"
+                android:layout_width="200dp"
+                android:layout_height="fill_parent"
+                android:text="VIP视频"
+                android:elevation="3dip"
+                android:background="@android:color/transparent" />
+        </FrameLayout>
+        <FrameLayout
             android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:text="续费VIP会员"
-            android:background="@android:color/transparent"/>
+            android:layout_height="fill_parent"
+            android:elevation="3dip">
+            <Button
+                android:id="@+id/btn_renewalVip"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="续费VIP会员"
+                android:elevation="3dip"
+                android:background="@android:color/transparent"/>
+        </FrameLayout>
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp">
+        android:layout_height="40dp"
+        android:background="@layout/boder">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="  视频功能"
+            android:textColor="@android:color/background_dark"
             android:gravity="center|left"/>
     </LinearLayout>
     <GridLayout
@@ -44,13 +63,16 @@
         <LinearLayout
             android:layout_width="130dp"
             android:layout_height="100dp"
+            android:elevation="3dip"
             android:orientation="vertical">
-        <android.support.v7.widget.AppCompatImageButton
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@android:color/transparent"
-            android:src="@drawable/history"/>
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/img_history"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/history" />
             <Button
+                android:id="@+id/btn_history"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:background="@android:color/transparent"
@@ -60,13 +82,16 @@
         <LinearLayout
             android:layout_width="130dp"
             android:layout_height="100dp"
+            android:elevation="3dip"
             android:orientation="vertical">
             <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/img_mycollect"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:background="@android:color/transparent"
                 android:src="@drawable/collect"/>
             <Button
+                android:id="@+id/btn_mycollect"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:background="@android:color/transparent"
@@ -78,12 +103,14 @@
             android:layout_width="130dp"
             android:layout_height="100dp"
             android:orientation="vertical">
-        <android.support.v7.widget.AppCompatImageButton
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@android:color/transparent"
-            android:src="@drawable/download2"/>
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/img_offlinecenter"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/mydownload"/>
             <Button
+                android:id="@+id/btn_offlinecenter"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:background="@android:color/transparent"
@@ -100,11 +127,13 @@
             android:layout_height="100dp"
             android:orientation="vertical">
             <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/img_setting"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:background="@android:color/transparent"
-                android:src="@drawable/download2"/>
+                android:src="@drawable/setting"/>
             <Button
+                android:id="@+id/btn_setting"
                 android:layout_width="130dp"
                 android:layout_height="20dp"
                 android:text="设置"
@@ -116,11 +145,13 @@
             android:layout_height="100dp"
             android:orientation="vertical">
             <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/img_help"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:background="@android:color/transparent"
-                android:src="@drawable/download2"/>
+                android:src="@drawable/helppicture"/>
             <Button
+                android:id="@+id/btn_help"
                 android:layout_width="130dp"
                 android:layout_height="20dp"
                 android:text="帮助"
@@ -130,11 +161,13 @@
     </GridLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp">
+        android:layout_height="40dp"
+        android:background="@layout/boder">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="    第三方"
+            android:textColor="@android:color/background_dark"
             android:gravity="center|left"/>
     </LinearLayout>
     <GridLayout
@@ -146,11 +179,13 @@
             android:layout_height="100dp"
             android:orientation="vertical">
             <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/img_traffic"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:background="@android:color/transparent"
-                android:src="@drawable/download2"/>
+                android:src="@drawable/traffic"/>
             <Button
+                android:id="@+id/btn_traffic"
                 android:layout_width="130dp"
                 android:layout_height="20dp"
                 android:text="免流量看视频"
@@ -161,12 +196,14 @@
             android:layout_width="130dp"
             android:layout_height="100dp"
             android:orientation="vertical">
-        <android.support.v7.widget.AppCompatImageButton
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@android:color/transparent"
-            android:src="@drawable/download2"/>
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/img_movieticket"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/movieticket"/>
             <Button
+                android:id="@+id/btn_movieticket"
                 android:layout_width="130dp"
                 android:layout_height="20dp"
                 android:text="我的电影票"
@@ -177,12 +214,14 @@
             android:layout_width="130dp"
             android:layout_height="100dp"
             android:orientation="vertical">
-        <android.support.v7.widget.AppCompatImageButton
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@android:color/transparent"
-            android:src="@drawable/download2"/>
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/img_bankcard"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/card"/>
             <Button
+                android:id="@+id/btn_bankcard"
                 android:layout_width="130dp"
                 android:layout_height="20dp"
                 android:text="联名银行卡"
@@ -195,16 +234,26 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <Button
+            android:id="@+id/btn_aboutAs"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="关于我们"
             android:gravity="center"
+            android:textColor="@android:color/background_dark"
             android:background="@android:color/transparent"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="CliCli版本"
+            android:text="CliCli版本:1.0"
             android:gravity="center"
+            android:textColor="@android:color/background_dark"
             android:background="@android:color/transparent"/>
+        <Button
+            android:id="@+id/btn_quit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="退出登录"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone"/>
     </LinearLayout>
 </LinearLayout>
