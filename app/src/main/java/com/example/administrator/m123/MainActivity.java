@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity{
     ImageButton myhom;
     ImageButton myhome,download,homepage,vip;
     TextView txt;
-    Button Movie;
+    Button Movie,Tiyu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity{
         download=(ImageButton)findViewById(R.id.download);
         myhome=(ImageButton)findViewById(R.id.myhome);
         Movie=(Button)findViewById(R.id.movie);
+        Tiyu=(Button)findViewById(R.id.sports);
 
         homepage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +71,13 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,Movie.class);
+                startActivity(intent);
+            }
+        });
+        Tiyu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,tiyuzhujiemian.class);
                 startActivity(intent);
             }
         });

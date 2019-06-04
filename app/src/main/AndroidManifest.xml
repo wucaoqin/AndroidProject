@@ -21,13 +21,15 @@
         <activity android:name=".Play"/>
         <activity android:name=".ZongyiShouye"/>
         <activity android:name=".ZongyiShaixuan"/>
-        <activity android:name=".Myhome" />
+
         <activity android:name=".MySet"/>
         <activity android:name=".NumberOfCaches"/>
         <activity android:name=".Aboutas"/>
         <activity android:name=".Movie"></activity>
-        <activity android:name=".Play"></activity>
+
         <activity android:name=".screen"></activity>
+        <activity android:name=".tiyuzhujiemian"/>
+        <activity android:name=".Tiyushuaixuan"/>
     </application>
 
 </manifest>
